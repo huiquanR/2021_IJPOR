@@ -121,8 +121,7 @@ ABS1 = within(ABS1, {
 })
 
 # Number of People in the same household #
-ABS1$HHSIZE = ifelse(ABS1$se008a>=0 & 
-                       ABS1$se008a<=26, 
+ABS1$HHSIZE = ifelse(ABS1$se008a>=0 & ABS1$se008a<=26, 
                      ABS1$se008a, NA)
 
 # income level #
